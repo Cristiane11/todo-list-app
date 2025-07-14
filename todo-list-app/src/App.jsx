@@ -1,17 +1,19 @@
 import Coffees from './Coffees';
+import ClassComponent  from './ClassComponent';
 import Teas from './Teas';
-
 import Pastries from './Pastries';
-function App() {
-  
 
+
+function App() {
   return (
     <>
-     <Coffees/>
-     <Teas/>
-     <Pastries/>
+      <ClassComponent />
+      <Coffees/>
+      <Teas/>
+      <Pastries/>
     </>
   )
 }
 
 export default App
+  
