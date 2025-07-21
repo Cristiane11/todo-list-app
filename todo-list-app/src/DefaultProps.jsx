@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
+//import {string} from 'prop-types'
 
 
-function DefaultProps(props){
+function DefaultProps(/*props- Nao sei pq props is not working */){
     const[name, setName] = useState(DefaultProps.initialName)
   
     const changeName =()=>{
@@ -17,8 +18,10 @@ function DefaultProps(props){
     );
 }
 
-DefaultProps.initialName = {
-    initialName: "Cristiane"
+DefaultProps.propTypes = {
+    initialName: string,
 };
-
+DefaultProps.defaultProps ={
+    initialName: 'Cristiane'
+}
 export default DefaultProps;

@@ -1,17 +1,19 @@
 import Coffees from './Coffees';
 //import ClassComponent  from './ClassComponent';
 //import FunctionClassComponent from './FunctionClassComponent';
-import DefaultProps from './DefaultProps';
+//import DefaultProps from './DefaultProps';
 import Teas from './Teas';
 import Pastries from './Pastries';
+import Greeting from './Greeting';
 
 
 function App() {
+  const  customMessage ="Welcome to the ReactApp";
   return (
     <>
-      <DefaultProps />
+      <Greeting/>
       <Coffees milk="Cafe commm leite"/>
-      <Teas/>
+      <Teas  customMessage={customMessage}/>
       <Pastries/>
     </>
   )
