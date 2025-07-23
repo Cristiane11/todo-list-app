@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Greeting/>
+      <h1>Hello World</h1>
       <Coffees milk="Cafe commm leite"/>
       <Teas  customMessage={customMessage}/>
       <Pastries/>
